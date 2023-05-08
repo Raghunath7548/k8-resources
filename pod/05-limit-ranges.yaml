@@ -4,21 +4,21 @@ metadata:
   name: cpu-resource-constraint
 spec:
   limits:
-  - default: # this section defines default limits
+  - default:
       cpu: 500m
-    defaultRequest: # this section defines default requests
+    defaultRequest:
       cpu: 500m
-    max: # max and min define the limit range
+    max:
       cpu: "1"
     min:
       cpu: 100m
     type: Container
 
-  - default: # this section defines default limits
+  - default:
       cpu: 500m
-    defaultRequest: # this section defines default requests
+    defaultRequest:
       cpu: 500m
-    max: # max and min define the limit range
+    max:
       cpu: "1"
     min:
       cpu: 100m
@@ -34,4 +34,3 @@ spec:
     imagePullPolicy: Always
     name: stress
     command: ["sleep", "200"]
-    
