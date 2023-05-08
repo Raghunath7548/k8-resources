@@ -14,15 +14,15 @@ spec:
       cpu: 100m
     type: Container
 
-  - default:
-      cpu: 500m
-    defaultRequest:
-      cpu: 500m
+  - type: "Pod"
     max:
-      cpu: "1"
+      cpu: "2"
+      memory: "1Gi"
     min:
-      cpu: 100m
-    type: pod
+      cpu: "200m"
+      memory: "6Mi"
+    maxLimitRequestRatio:
+      cpu: "10"
 ---
 apiVersion: v1
 kind: Pod
