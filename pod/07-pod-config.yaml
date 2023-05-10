@@ -27,5 +27,5 @@ spec:
   - name: ngin
     image: nginx
     envFrom:
-    - confiMapref:
+    - confiMapRef:
         name: couse-config
