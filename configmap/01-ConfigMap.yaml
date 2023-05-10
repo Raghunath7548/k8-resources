@@ -1,5 +1,5 @@
-apiVersion: V1
-kind: configmap
+apiVersion: v1
+kind: ConfigMap
 metadata:
   name: course-config
 data:
